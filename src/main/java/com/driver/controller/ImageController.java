@@ -11,8 +11,8 @@ import org.springframework.web.bind.annotation.*;
 @RequestMapping("/images")
 public class ImageController {
 
-    @Autowired
-    ImageService imageService;
+   // @Autowired
+    ImageService imageService = new ImageService();
 
     @PostMapping("/create")
     public ResponseEntity<Image> createAndReturn(@RequestBody Blog blog,
