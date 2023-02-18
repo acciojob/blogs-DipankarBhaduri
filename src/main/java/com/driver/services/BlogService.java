@@ -17,6 +17,8 @@ import java.util.List;
 public class BlogService {
     @Autowired
     BlogRepository blogRepository1;
+
+    @Autowired
     UserRepository userRepository1;
 
     @Autowired
